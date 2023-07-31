@@ -16,7 +16,7 @@ int main()
             cout<<ch;
             ch++;
             j++;
-        }
+        }   
         cout<<endl;
         i++;
     }
