@@ -10,7 +10,7 @@ int uele(vector<int>arr)
     {
         ans = ans ^ arr[i];
     }
-
+    
     return ans;
 }
 
@@ -31,7 +31,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         cout<<arr[i]<<" ";
-    }cout<<endl;
+    }
 
     int uniqueelement = uele(arr);
 
