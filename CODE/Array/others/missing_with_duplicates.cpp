@@ -5,7 +5,7 @@ int main()
 {
     int n = 5;
     int arr[n] = {1,5,3,3,4};
-
+    
     for(int i=0;i<n;i++)
     {
         int index = abs(arr[i]);
