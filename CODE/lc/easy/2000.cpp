@@ -2,7 +2,7 @@
 // 2000. Reverse Prefix of Word
 
 // class Solution {
-// public:
+// public:  
 //     string reversePrefix(string word, char ch) {
 //         stack<char> stack;
 //         string result;
