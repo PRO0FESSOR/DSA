@@ -9,7 +9,6 @@
 //         backtrack(nums, 0, path, result);
 //         return result;
 //     }
-    
 //     void backtrack(vector<int>& nums, int start, vector<int>& path, vector<vector<int>>& result) {
 //         result.push_back(path);
 //         for (int i = start; i < nums.size(); i++) {
@@ -19,3 +18,6 @@
 //         }
 //     }
 // };
+
+
+// { lc : 78 subsets approach - dp with stings }
