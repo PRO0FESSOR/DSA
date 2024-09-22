@@ -1,9 +1,10 @@
 DATA STRUCTURES AND ALGORITHMS 
 
-STREAK = 1
+STREAK = 0
 
-Starting = "20-09-2024" Today = "20-09-2024"  
+[ Starting = "" Today = "" ]  
 
+[ DSA NOTES ARE IN THE NOTES DIRECTORY ]
 
 Data Structures:
 
