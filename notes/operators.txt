@@ -1,0 +1,145 @@
+{ Operators in C++ }
+
+Operators are symbols that tell the compiler to perform specific mathematical, logical, or manipulative operations on variables and values. 
+
+Here’s a breakdown of the various types of operators in C++:
+
+1. Arithmetic Operators
+
+These operators perform basic arithmetic operations.
+
+    + (Addition): Adds two operands.
+    - (Subtraction): Subtracts the right operand from the left operand.
+    * (Multiplication): Multiplies two operands.
+    / (Division): Divides the left operand by the right operand.
+    % (Modulus): Returns the remainder of division.
+
+2. Relational (Comparison) Operators
+
+These operators compare two values and return true or false.
+
+    == (Equal to): Checks if two operands are equal.
+    != (Not equal to): Checks if two operands are not equal.
+    > (Greater than): Checks if the left operand is greater than the right operand.
+    < (Less than): Checks if the left operand is less than the right operand.
+    >= (Greater than or equal to): Checks if the left operand is greater than or equal to the right operand.
+    <= (Less than or equal to): Checks if the left operand is less than or equal to the right operand.
+
+3. Logical Operators
+
+These operators are used for logical operations and typically return a boolean value.
+
+    && (Logical AND): Returns true if both operands are true.
+    || (Logical OR): Returns true if one of the operands is true.
+    ! (Logical NOT): Returns true if the operand is false.
+
+4. Bitwise Operators
+
+Bitwise operators operate on binary numbers directly, manipulating the individual bits.
+
+    & (Bitwise AND): Performs a binary AND on two bits.
+    | (Bitwise OR): Performs a binary OR on two bits.
+    ^ (Bitwise XOR): Performs a binary XOR (exclusive OR) on two bits.
+    ~ (Bitwise NOT): Flips all the bits in a number.
+    << (Left Shift): Shifts bits to the left by a specified number of positions.
+    >> (Right Shift): Shifts bits to the right by a specified number of positions.
+
+Example:
+
+cpp
+
+int x = 5;  // Binary: 0101
+int y = 3;  // Binary: 0011
+int result = x & y;  // Result: 0001 (1 in decimal)
+
+5. Assignment Operators
+
+These operators assign values to variables.
+
+    = (Assignment): Assigns the right operand to the left operand.
+    += (Add and assign): Adds the right operand to the left operand and assigns the result to the left operand.
+    -= (Subtract and assign): Subtracts the right operand from the left operand and assigns the result.
+    *= (Multiply and assign): Multiplies the operands and assigns the result.
+    /= (Divide and assign): Divides the operands and assigns the result.
+    %= (Modulus and assign): Finds modulus and assigns the result.
+
+6. Increment and Decrement Operators
+
+These are shorthand operators to increase or decrease a value by 1.
+
+    ++ (Increment): Increases a value by 1.
+        ++i (Pre-increment): Increments first, then uses the variable.
+        i++ (Post-increment): Uses the variable first, then increments.
+    -- (Decrement): Decreases a value by 1.
+        --i (Pre-decrement).
+        i-- (Post-decrement).
+
+7. Conditional (Ternary) Operator
+
+The ternary operator is a shorthand for an if-else statement.
+
+    ?: (Ternary): condition ? expr1 : expr2
+        If the condition is true, it evaluates and returns expr1, otherwise expr2.
+
+Example:
+
+cpp
+
+int x = 10;
+int y = (x > 5) ? 1 : 0;  // y will be 1 because x > 5 is true.
+
+8. Typecast Operator
+
+This is used to convert a variable from one type to another.
+
+    type(value): Converts the value to the specified type.
+
+9. Pointer Operators
+
+    & (Address of): Returns the address of a variable.
+    * (Dereference): Accesses the value stored at a particular address.
+
+10. Scope Resolution Operator (::)
+
+This operator is used to define the context in which a variable or method is defined.
+
+    Classname::method(): Specifies that the method belongs to the given class.
+
+Detailed Bitwise Operators
+
+Bitwise operations work on binary representations of numbers. Here’s a more detailed look:
+Bitwise AND (&)
+
+    Operation: Takes two binary numbers and compares them bit by bit. The result will have a 1 only where both bits in the corresponding position are 1.
+        Example: 1010 & 0110 = 0010.
+
+Bitwise OR (|)
+
+    Operation: Takes two binary numbers and compares them bit by bit. The result will have a 1 where either or both bits are 1.
+        Example: 1010 | 0110 = 1110.
+
+Bitwise XOR (^)
+
+    Operation: Takes two binary numbers and returns a 1 where the bits differ , if the bits are same then it returns 0.
+        Example: 1010 ^ 0110 = 1100.
+
+Bitwise NOT (~)
+
+    Operation: Flips all the bits in the number. 0 becomes 1 and 1 becomes 0.
+        Example: ~1010 = 0101 (inverting all bits).
+
+Left Shift (<<)
+
+    Operation: Shifts all bits in a binary number to the left by a specified number of positions, effectively multiplying the number by powers of two.
+        Example: 1010 << 2 = 101000 (Shifts two bits left, adding two zeros at the end).
+
+Right Shift (>>)
+
+    Operation: Shifts all bits in a binary number to the right by a specified number of positions, effectively dividing the number by powers of two.
+        Example: 1010 >> 2 = 0010 (Shifts two bits right).
+
+Conclusion
+
+Learning about operators and their properties is essential for optimizing and writing efficient C++ code. Bitwise operations are particularly useful when dealing with low-level data manipulation, such as in embedded systems, graphics, and cryptography. Keep practicing these operators to develop a deeper understanding.
+
+
