@@ -1,0 +1,49 @@
+Complexity 
+- AMount of time taken by an algorithm to run as a function of length of input .
+
+why 
+- for making better programs 
+- for comparison of algorithm
+
+Time Complexity
+- big O notation - upper bound - atmost time
+- theta notation - avg-case Complexity 
+- omega notation - lower bound - atleast time 
+
+- interviews are focused on upper bound
+
+
+Constant time -> o(1);
+linear time -> (n);
+logatithmic time -> (log n);
+quadratic time -> (n^2);
+exponential time -> (2^n);
+
+highest to lowest 
+
+n!
+2^n
+n^3
+n^2
+nlogn
+n
+logn
+1
+
+
+
+time limit exceed :)
+
+10^8 operation - most of the modern machines can perform 10^8 operation per second .
+
+
+contraints are like 1<n<10^6 (at max operations allowed)
+
+<[10...11]  - o(n!) , o(n^6)
+<[15...18]  - o(2^n * n^2)
+<100        - o(n^4)
+<200        - o(n^3)
+<2000       - o(n^2 * logn)
+<10^4       - o(n^2)
+<10^6       - o(nlogn)
+<10^8       - o(n) , o(logn)
