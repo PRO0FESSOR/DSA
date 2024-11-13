@@ -1,0 +1,9 @@
+// patterns
+
+1) array 
+
+- most common is sorting the aray using sort to perform actions
+- two pointers , to evaluate two values at once 
+- extra array for marking 
+- inplace marking
+- use of unordered set to store counts or use its properties for marking 
