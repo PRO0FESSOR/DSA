@@ -1,8 +1,8 @@
 DATA STRUCTURES AND ALGORITHMS 
 
-STREAK = 0
+STREAK = 1
 
-[ Starting = "" Today = "" ]  
+[ Starting = "13/11" Today = "13/11" ]  
 
 [ DSA NOTES ARE IN THE NOTES DIRECTORY ]
 
