@@ -1,0 +1,72 @@
+1. Primitive Data Types:
+
+    Integer Types:
+        int: Standard integer type (usually 4 bytes).
+        short: Short integer (usually 2 bytes).
+        long: Long integer (usually 4 or 8 bytes depending on the system).
+        long long: Long long integer (usually 8 bytes).
+        unsigned: Unsigned integer (only stores positive values).
+        unsigned short, unsigned long, unsigned long long: Unsigned versions of the above types.
+    Character Types:
+        char: Stores a single character (usually 1 byte).
+        wchar_t: Wide character (usually 2 or 4 bytes, for Unicode).
+        char16_t, char32_t: Used for 16-bit and 32-bit Unicode characters.
+    Floating Point Types:
+        float: Single precision floating-point (usually 4 bytes).
+        double: Double precision floating-point (usually 8 bytes).
+        long double: Extended precision floating-point (usually 12 or 16 bytes).
+    Boolean Type:
+        bool: Stores a boolean value (true or false, usually 1 byte).
+    Void Type:
+        void: Represents an absence of type. Used for functions that don’t return a value or for pointers that don’t point to a specific type.
+
+2. Derived Data Types:
+
+    Arrays: A collection of elements of the same type.
+    Pointers: Variables that store the address of another variable.
+    References: An alias for another variable. int x = 5; int& ref = x;
+    Functions: Functions are considered a type and can be pointed to with function pointers. void (*funcPtr)(int) = &myFunction;
+
+3. User-Defined Data Types:
+
+    Structures (struct): A user-defined data type that holds variables of different data types.
+    struct Person {
+    std::string name;
+    int age;
+    };
+    Unions (union): A union allows storing different data types in the same memory location (only one at a time).
+    union Data {
+    int i;
+    float f;
+    };
+    Enumerations (enum): Used to define a set of named integer constants.
+    enum Color { RED, GREEN, BLUE };
+    Typedef: Used to create an alias for an existing data type.
+    typedef unsigned int uint;
+    Classes: A user-defined data type combining data and functions, foundational for object-oriented programming.
+    class MyClass {
+    public:
+      int x;
+      void display() { std::cout << x; }
+    };
+
+4. Standard Library Data Types:
+
+    std::string: A class for representing strings of characters.
+    Containers (e.g., std::vector, std::list, std::map): Data structures like dynamic arrays, linked lists, and key-value pairs.
+    Smart Pointers:
+        std::unique_ptr: Owns a dynamically allocated object.
+        std::shared_ptr: Multiple pointers share ownership of an object.
+        std::weak_ptr: A smart pointer that does not affect reference count.
+    std::tuple: A fixed-size collection of heterogeneous values.
+    std::tuple<int, float, std::string> t = std::make_tuple(1, 2.5f, "hello");
+
+5. Special Types:
+
+    nullptr: Represents a null pointer constant. 
+    int* ptr = nullptr;
+    decltype: Used to query the type of an expression. 
+    int x = 5;
+    decltype(x) y = 10; // y will have type int
+
+These data types are the building blocks of C++ programming and are used in various combinations to define variables, create structures, and manage memory effectively.
