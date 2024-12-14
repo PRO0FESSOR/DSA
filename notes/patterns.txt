@@ -1,4 +1,4 @@
-// patterns
+// patterns & tricks
 
 1) array 
 
@@ -7,3 +7,9 @@
 - extra array for marking 
 - inplace marking
 - use of unordered set to store counts or use its properties for marking 
+- -ve index - circular - (index+n)%n;
+- +ve index - outofbound circular - (index % n);
+- if the time complexity is high then try to break the code using loops to minimize complexity like n^4 to n^3 for example [ triplet sum - instead of using 3 loops use one loop and two
+  pointers approach ]
+- moore voting algotithm [The intuition behind the Moore's Voting Algorithm is based on the fact that if there is a majority element in an array, it will always remain in the lead, even after encountering other elements.] { For majority element problem }
+
