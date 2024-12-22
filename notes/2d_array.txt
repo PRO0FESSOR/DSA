@@ -1,0 +1,177 @@
+
+[ Two Dimentional Array ] -> ONE SHOT 
+
+
+2D Array
+=> A 2D array is an array of arrays. It is used to store data in a tabular format (like a matrix). In memory, it is stored row by row (row-major order).
+
+Characteristics:
+=> Rows and Columns: A 2D array has two dimensions, typically accessed using two indices—arr[i][j].
+=> Fixed Size: Like 1D arrays, the size of a 2D array is fixed once declared.
+
+Syntax in C++:
+int arr[3][4] = {
+    {1, 2, 3, 4}, 
+    {5, 6, 7, 8}, 
+    {9, 10, 11, 12}
+};  // A 3x4 matrix
+
+Time Complexity:
+
+    Accessing an element: O(1)
+    Searching, Insertion, Deletion: O(n*m) where n is the number of rows and m is the number of columns.
+
+
+VECTOR OF VECTORS :: 
+
+A 2D vector is essentially a vector of vectors. It is a dynamic structure that allows you to store rows of data, where each row itself is a vector. This makes it highly flexible for caseswhere the number of rows or columns is not fixed.
+
+std::vector<std::vector<int>> vec;
+
+Initialization Examples ::
+
+Empty 2D Vector:
+
+std::vector<std::vector<int>> vec;
+
+Fixed Size with Default Values:
+
+int rows = 3, cols = 4, defaultValue = 0;
+std::vector<std::vector<int>> vec(rows, std::vector<int>(cols, defaultValue));
+
+Direct Initialization:
+
+std::vector<std::vector<int>> vec = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+
+
+Accessing Elements
+
+vec[i][j]; // Access element at row `i` and column `j`
+
+Number of Rows:
+
+int rows = vec.size();
+
+Number of Columns (in a specific row):
+
+int cols = vec[0].size(); // Assuming the vector is not empty
+
+
+
+Getting Rows and Columns from a 2D Array ::
+
+If you are using a 2D array:
+
+int arr[3][4]; // 3 rows and 4 columns
+
+    Number of Rows:
+
+int rows = sizeof(arr) / sizeof(arr[0]);
+
+Number of Columns:
+
+int cols = sizeof(arr[0]) / sizeof(arr[0][0]);
+
+
+
+
+
+One-Shot for 2D Array Formulas ::
+
+Variables Used:
+
+    i: Row index (0-based).
+    j: Column index (0-based).
+    rows: Total number of rows in the 2D array.
+    cols: Total number of columns in the 2D array.
+    Base_Address: Memory address of the first element (arr[0][0]).
+    sizeof(type): Size of each element in bytes.
+
+1. Row-Major Order
+
+    Memory Address Formula:
+
+    Address(arr[i][j]) = Base_Address + (i * cols + j) * sizeof(type)
+
+    Mapping to 1D Index:
+
+    index_in_1D = i * cols + j
+
+2. Column-Major Order
+
+    Memory Address Formula:
+
+    Address(arr[i][j]) = Base_Address + (j * rows + i) * sizeof(type)
+
+    Mapping to 1D Index:
+
+      index_in_1D = j * rows + i
+
+3. Total Elements in a 2D Array
+
+    Formula:
+
+    Total Elements = rows * cols
+
+4. Calculate Row and Column from a 1D Index (Row-Major Order)
+
+    Given a 1D index index_in_1D:
+
+    Row:
+
+    i = index_in_1D / cols
+
+    Column:
+
+    j = index_in_1D % cols
+
+5. Calculate Row and Column from a 1D Index (Column-Major Order)
+
+    Given a 1D index index_in_1D:
+
+    Column:
+
+    j = index_in_1D / rows
+
+    Row:
+
+    i = index_in_1D % rows
+
+6. Total Memory Used by a 2D Array
+
+    Formula:
+
+    Total Memory = rows * cols * sizeof(type)
+
+7. Sum of All Elements in a 2D Array
+
+    Formula:
+
+    Sum = Σ(arr[i][j]) for all i and j
+
+8. Accessing the Main Diagonal
+
+    Condition for Diagonal Elements:
+
+    i == j
+
+9. Accessing the Anti-Diagonal
+
+    Condition for Anti-Diagonal Elements:
+
+    i + j == cols - 1
+
+10. Boundary Elements
+
+    Condition for Boundary Elements:
+
+    i == 0 || i == rows - 1 || j == 0 || j == cols - 1
+
+Usage
+
+These formulas can be applied to various problems like matrix traversal, memory optimization, and index calculations.
+
