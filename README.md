@@ -1,9 +1,5 @@
 DATA STRUCTURES AND ALGORITHMS 
 
-STREAK = 1
-
-[ Starting = "18/12" Today = "18/12" ]  
-
 [ DSA NOTES ARE IN THE NOTES DIRECTORY ]
 
 Data Structures:
