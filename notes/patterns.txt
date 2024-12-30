@@ -16,3 +16,6 @@
 - Binary search
 - the trick is to keep the basics in the mind , bs is all about s , e and mid
 - simply find out the condition with mid to get the solution 
+- In some problems we have to find search space for example root of 4 which is less than 4 (so search space is 0 to 3).
+- In some problems - we need to find search space as well as perform operation (example is book allocation problem - we need to create search space then check is it a possible solution or not.)
+- while calculating the search space of problem discussed above - choose end is sum of all and start is the maximum number (maximum number is always smaller than the maximum subarray sum).
