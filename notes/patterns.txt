@@ -14,6 +14,9 @@
   pointers approach ]
 - moore voting algotithm [The intuition behind the Moore's Voting Algorithm is based on the fact that if there is a majority element in an array, it will always remain in the lead, even after encountering other elements.] { For majority element problem }
 - Binary search
+- When we need to search element , and elements are sorted then use binary search .
+- When we are sure (after any opertaion like mid) that answer is in first or second part of array then use binary search .
+- When we know we need to neglect either right part or left part then use binary search .
 - the trick is to keep the basics in the mind , bs is all about s , e and mid
 - simply find out the condition with mid to get the solution 
 - In some problems we have to find search space for example root of 4 which is less than 4 (so search space is 0 to 3).
