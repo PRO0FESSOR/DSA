@@ -5,8 +5,8 @@
 
 int main(){
   
-  auto n = 5;
-  int arr[n] = {5,4,3,2,1};
+  auto n = 6;
+  int arr[n] = {9,2,10,8,11,6};
 
   for(int i=1;i<n;++i){
     for(int j=0;j<n-i;++j){
