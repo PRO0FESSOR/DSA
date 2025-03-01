@@ -1,0 +1,148 @@
+
+# STL (Standard Template Library) One-Shot Guide  
+
+## 1. STL Overview  
+STL is a powerful C++ library that provides generic classes and functions for data structures and algorithms. It consists of three main components:  
+- Containers (Data structures)  
+- Algorithms (Operations on containers)  
+- Iterators (Bridge between containers and algorithms)  
+
+## 2. Containers in STL  
+STL provides several container classes categorized into:  
+
+### Sequential Containers:  
+- `vector` → Dynamic array, fast access, and resizing.  
+- `deque` → Double-ended queue, fast insert/delete at both ends.  
+- `list` → Doubly linked list, efficient insert/delete anywhere.  
+- `forward_list` → Singly linked list, efficient forward traversal.  
+- `array` → Fixed-size array, lightweight alternative to `vector`.  
+- `string` → Dynamic character array for string manipulation.  
+
+### Associative Containers (Ordered):  
+- `set` → Unique sorted elements, fast search.  
+- `multiset` → Allows duplicate sorted elements.  
+- `map` → Key-value pairs, sorted by key.  
+- `multimap` → Allows duplicate keys in a sorted map.  
+
+### Unordered Containers (Hash-Based):  
+- `unordered_set` → Unique elements, fast lookup (hashing).  
+- `unordered_multiset` → Allows duplicate elements, uses hashing.  
+- `unordered_map` → Key-value pairs, hashed keys.  
+- `unordered_multimap` → Allows duplicate keys, uses hashing.  
+
+### Container Adapters:  
+- `stack` → LIFO (Last-In, First-Out) structure.  
+- `queue` → FIFO (First-In, First-Out) structure.  
+- `priority_queue` → Heap-based priority queue.  
+
+---
+
+## 3. Algorithms in STL  
+STL provides various algorithms in `<algorithm>` and `<numeric>`.  
+
+### Categories of Algorithms:  
+- Sorting & Searching: `sort()`, `stable_sort()`, `binary_search()`, `lower_bound()`, `upper_bound()`  
+- Modifying Operations: `copy()`, `fill()`, `replace()`, `remove()`, `transform()`  
+- Numeric Operations: `accumulate()`, `inner_product()`, `partial_sum()`, `adjacent_difference()`  
+- Querying Operations: `count()`, `find()`, `equal()`  
+- Partitioning: `partition()`, `stable_partition()`  
+- Set Operations: `set_union()`, `set_intersection()`, `set_difference()`  
+- Heap Operations: `make_heap()`, `push_heap()`, `pop_heap()`, `sort_heap()`  
+- Permutation-Based: `next_permutation()`, `prev_permutation()`  
+
+---
+
+## 4. Brief Explanation of Containers  
+- Sequential Containers: Store elements in a linear order. Efficient for dynamic storage and iteration.  
+- Associative Containers: Maintain elements in a sorted or hashed order, providing efficient lookups.  
+- Container Adapters: Provide a restricted interface on top of other containers for specific use cases (LIFO/FIFO).  
+
+---
+
+## 5. Brief Explanation of Algorithms  
+- Sorting Algorithms: Sort elements in ascending/descending order (`sort()`, `stable_sort()`).  
+- Searching Algorithms: Locate elements efficiently (`find()`, `binary_search()`).  
+- Heap Operations: Used for priority-based structures (`make_heap()`, `push_heap()`).  
+- Numeric Algorithms: Perform mathematical operations (`accumulate()`, `inner_product()`).  
+- Set Operations: Used to process and compare sets (`set_union()`, `set_difference()`).  
+
+---
+
+## 6. Containers in Detail  
+
+### Sequential Containers:  
+1. vector  
+   - Dynamic array with automatic resizing.  
+   - Supports `push_back()`, `pop_back()`, `insert()`, `erase()`.  
+   - `O(1)` access with `operator[]`, `at()`.  
+
+2. deque  
+   - Supports fast insert/delete at both ends.  
+   - Methods: `push_front()`, `push_back()`, `pop_front()`, `pop_back()`.  
+
+3. list  
+   - Doubly linked list for efficient insert/delete anywhere.  
+   - Methods: `push_front()`, `push_back()`, `insert()`, `erase()`, `remove()`.  
+
+4. forward_list  
+   - Singly linked list, uses less memory than `list`.  
+   - Supports `push_front()`, `insert_after()`, `erase_after()`.  
+
+5. array  
+   - Fixed-size array with `at()`, `front()`, `back()`, `fill()`.  
+
+6. string  
+   - Dynamic character array with string-specific functions.  
+   - Methods: `substr()`, `find()`, `replace()`, `append()`, `erase()`.  
+
+---
+
+### Associative Containers (Ordered Containers):  
+1. set  
+   - Stores unique elements in sorted order.  
+   - Operations: `insert()`, `erase()`, `find()`, `count()`, `lower_bound()`, `upper_bound()`.  
+
+2. multiset  
+   - Allows duplicate elements, maintains sorted order.  
+   - Same methods as `set`, but allows duplicate entries.  
+
+3. map  
+   - Key-value pairs stored in sorted order.  
+   - Operations: `insert()`, `erase()`, `find()`, `count()`, `at()`.  
+
+4. multimap  
+   - Allows multiple values for a single key.  
+
+---
+
+### Unordered Containers (Hash-Based Containers):  
+1. unordered_set  
+   - Stores unique elements using a hash table for `O(1)` average search time.  
+   - Operations: `insert()`, `erase()`, `find()`, `count()`.  
+
+2. unordered_multiset  
+   - Similar to `unordered_set`, but allows duplicate values.  
+
+3. unordered_map  
+   - Key-value pairs stored in a hash table.  
+   - Methods: `insert()`, `erase()`, `find()`, `operator[]`.  
+
+4. unordered_multimap  
+   - Allows multiple values per key, using hashing for lookup.  
+
+---
+
+### Container Adapters:  
+1. stack  
+   - LIFO data structure, supports `push()`, `pop()`, `top()`.  
+
+2. queue  
+   - FIFO structure, supports `push()`, `pop()`, `front()`, `back()`.  
+
+3. priority_queue  
+   - Max-heap by default, allows priority-based retrieval (`top()`, `push()`, `pop()`).  
+
+---
+
+This one-shot STL guide provides a structured breakdown of STL containers and algorithms. 🚀
+
